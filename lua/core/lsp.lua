@@ -1,4 +1,4 @@
-vim.lsp.enable({ "lua-ls", "gopls", "ts-ls", "clangd" })
+vim.lsp.enable({ "lua-ls", "gopls", "ts-ls", "clangd", "css-ls" })
 
 vim.diagnostic.config({
 	virtual_text = true,
