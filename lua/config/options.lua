@@ -40,9 +40,9 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 -- Set tabstop, shiftwidth, and softtabstop to 4 spaces
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 
 -- Expand tabs to spaces
 vim.opt.expandtab = true
