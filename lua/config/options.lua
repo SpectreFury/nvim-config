@@ -5,6 +5,7 @@ vim.o.number = true
 vim.o.showmode = false
 vim.opt.mouse = "a"
 vim.opt.termguicolors = true
+vim.opt.wrap = false
 
 vim.schedule(function()
 	vim.o.clipboard = "unnamedplus"
