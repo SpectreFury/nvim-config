@@ -15,6 +15,8 @@ vim.pack.add({
 	{ src = gh("ThePrimeagen/harpoon"), version = "harpoon2" },
 	gh("nvim-telescope/telescope.nvim"),
 	gh("nvim-treesitter/nvim-treesitter"),
+  gh("pmizio/typescript-tools.nvim"),
+  gh("windwp/nvim-ts-autotag")
 })
 
 -- Gruvbox
@@ -51,8 +53,8 @@ require("conform").setup({
 		yaml = { "prettierd" },
 	},
 })
-vim.keymap.set("n", "<S-A-F>", function()
-	require("conform").format({ async = true, lsp_format = "falback" })
+vim.keymap.set("n", "<S-M-F>", function()
+ 	require("conform").format({ async = true, lsp_format = "fallback" })
 end, { desc = "[F]ormat buffer" })
 
 -- Mini
@@ -179,3 +181,11 @@ vim.api.nvim_create_autocmd("FileType", {
 		end
 	end,
 })
+
+-- Typescript
+
+require("typescript-tools").setup {}
+
+-- Autotag
+
+require("nvim-ts-autotag").setup {}
