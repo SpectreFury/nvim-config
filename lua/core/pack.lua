@@ -16,7 +16,8 @@ vim.pack.add({
 	gh("nvim-telescope/telescope.nvim"),
 	gh("nvim-treesitter/nvim-treesitter"),
   gh("pmizio/typescript-tools.nvim"),
-  gh("windwp/nvim-ts-autotag")
+  gh("windwp/nvim-ts-autotag"),
+  gh("luckasranarison/tailwind-tools.nvim")
 })
 
 -- Gruvbox
@@ -183,9 +184,10 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- Typescript
-
 require("typescript-tools").setup {}
 
 -- Autotag
-
 require("nvim-ts-autotag").setup {}
+
+-- Tailwind 
+require("tailwind-tools").setup {}
