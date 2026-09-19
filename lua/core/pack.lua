@@ -52,6 +52,7 @@ require("conform").setup({
 		scss = { "prettierd" },
 		markdown = { "prettierd" },
 		yaml = { "prettierd" },
+    python = { "black"}
 	},
 })
 vim.keymap.set("n", "<S-M-F>", function()
